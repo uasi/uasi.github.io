@@ -1,8 +1,9 @@
 # General Jekyll Config
 highlighter: pygments
-url: http://example.com
+url: http://uasi.github.io
 lsi: false
 exclude: [LICENSE, README.md, .gitignore, vendor]
+timezone: Asia/Tokyo
 
 # Theme customization
 theme:
@@ -15,9 +16,9 @@ theme:
     bitbucket: uasi
     twitter: uasi
 
-  name: uasi
+  name: uasi.github.io
   email: uasi@uasi.jp
   tagline: "Simplicity wins. Readability counts."
 
   # Toggle "Postings are my own" disclaimer in footer
-  show_disclaimer: true
+  show_disclaimer: false
