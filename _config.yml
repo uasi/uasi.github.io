@@ -2,7 +2,7 @@
 highlighter: pygments
 url: http://example.com
 lsi: false
-exclude: [LICENSE, README.md, .gitignore]
+exclude: [LICENSE, README.md, .gitignore, vendor]
 
 # Theme customization
 theme:
