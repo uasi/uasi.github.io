@@ -1,12 +1,23 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+# General Jekyll Config
+highlighter: pygments
+url: http://example.com
+lsi: false
+exclude: [LICENSE, README.md, .gitignore]
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# Theme customization
+theme:
+  # Color for top bar, links, etc
+  highlight_color: '#3498db'
+
+  # Profile links on the left sidebar, leave blank to ignore
+  social:
+    github: uasi
+    bitbucket: uasi
+    twitter: uasi
+
+  name: uasi
+  email: uasi@uasi.jp
+  tagline: "Simplicity wins. Readability counts."
+
+  # Toggle "Postings are my own" disclaimer in footer
+  show_disclaimer: true
