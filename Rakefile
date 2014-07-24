@@ -1,3 +1,5 @@
+EDITOR = "${VISUAL:-${EDITOR:-vi}}"
+
 desc "Start a new post"
 task :new, :title do |t, args|
  args.with_defaults(:title => 'My New Post')
@@ -13,13 +15,13 @@ task :new, :title do |t, args|
     post.puts "permalink: /#{safe_title}.html"
     post.puts "---"
   end
-  at_exit { exec "${EDITOR:-vi} #{filename}" }
+  at_exit { exec "#{EDITOR} #{filename}" }
 end
 
 desc "Edit a post"
 task :edit do |t|
   filename = `find _posts -name \\*.md | fzf`.chomp
   if filename != ""
-    at_exit { exec "${EDITOR:-vi} #{filename}" }
+    at_exit { exec "#{EDITOR} #{filename}" }
   end
 end
