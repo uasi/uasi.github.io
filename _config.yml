@@ -1,4 +1,5 @@
 # General Jekyll Config
+markdown: kramdown
 highlighter: pygments
 url: http://uasi.github.io
 lsi: false
