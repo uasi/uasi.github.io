@@ -17,11 +17,3 @@ task :new, :title do |t, args|
   end
   at_exit { exec "#{EDITOR} #{filename}" }
 end
-
-desc "Edit a post"
-task :edit do |t|
-  filename = `find _posts -name \\*.md | fzf`.chomp
-  if filename != ""
-    at_exit { exec "#{EDITOR} #{filename}" }
-  end
-end
